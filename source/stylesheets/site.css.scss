@@ -1,0 +1,135 @@
+@charset "utf-8";
+
+// -------------------------------------------------------------------
+// Bootstrap Overridden Variables
+// -------------------------------------------------------------------
+$font-size-h1:            40px;
+$font-size-h2:            20px;
+$font-size-h3:            14px;
+$font-family-sans-serif:  'Lucida Grande', Verdana, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+$brand-primary: #8E3E2F;
+
+// -------------------------------------------------------------------
+// Import Frameworks
+// -------------------------------------------------------------------
+@import 'bootstrap-custom';
+@import "font-awesome-sprockets";
+@import 'font-awesome';
+
+// -------------------------------------------------------------------
+// Mixins
+// -------------------------------------------------------------------
+@mixin opacity($bg-color) {
+  background-color: $bg-color;
+  opacity: .825;
+}
+
+// -------------------------------------------------------------------
+// Custom Styles
+// -------------------------------------------------------------------
+body {
+  #background {
+    @media (max-width: $screen-xs-max) {
+      background: $body-bg image-url('yurie-1200.jpg') 95% 20px no-repeat;
+      background-size: 183px 600px;
+    }
+    @media (min-width: $screen-sm-min) {
+      background: $body-bg image-url('yurie-1600.jpg') 75% 20px no-repeat;
+      background-size: 244px 800px;
+    }
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
+  > #header {
+    @media (max-width: $screen-xs-max) {
+      margin-top: 400px;
+    }
+    h1 {
+      img {
+        @media (max-width: $screen-xs-max) {
+          width: 140px;
+        }
+        @media (min-width: $screen-sm-min) {
+          width: 200px;
+        }
+        height: auto;
+      }
+    }
+  }
+  > #container {
+    @media (max-width: $screen-xs-max) {
+      @include opacity($body-bg);
+    }
+    margin-bottom: $line-height-computed + 32;
+    h3 {
+      font-weight: bold;
+    }
+  }
+  > #footer {
+    @include opacity($text-color);
+    bottom: 0;
+    color: $body-bg;
+    left: 0;
+    padding: $line-height-computed/2 0;
+    right: 0;
+    position: fixed;
+    p {
+      margin-bottom: 0;
+    }
+    a {
+      color: lighten($link-color, 25%);
+      text-decoration: underline; // Override
+    }
+    a:hover, a:active {
+      color: darken(lighten($link-color, 25%), 15%);
+    }
+    #social-bottons-guide {
+      vertical-align: bottom;
+      i.fa {
+        font-size: 20px;
+        vertical-align: bottom;
+      }
+    }
+  }
+}
+
+@media (min-width: $screen-sm-min) {
+  #profile-panel {
+    @include opacity($body-bg);
+    h2 {
+      margin-top: $line-height-computed / 2;
+    }
+    border: 1px solid $panel-default-border;
+    border-radius: $panel-border-radius;
+    bottom: 60px;
+    right: 10%;
+    position: fixed;
+    width: 320px;
+  }
+}
+
+.btn-yo {
+  @include button-variant(#ffffff, #9b59b6, darken(#9b59b6, 5%));
+  font-weight: bold;
+}
+
+.home-stat {
+  .number, .unit {
+    strong {
+      font-size: 36px;
+      font-weight: normal;
+    }
+    text-align: right;
+  }
+}
+.home-ranking {
+  strong {
+    @media (min-width: $screen-sm-min) {
+      font-size: 20px;
+    }
+  }
+}
