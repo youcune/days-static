@@ -13,8 +13,8 @@ $brand-primary: #8E3E2F;
 // Import Frameworks
 // -------------------------------------------------------------------
 @import 'bootstrap-custom';
-@import "font-awesome-sprockets";
-@import 'font-awesome';
+$fa-font-path:        "/stylesheets/font-awesome/fonts" !default;
+@import 'font-awesome/scss/font-awesome';
 
 // -------------------------------------------------------------------
 // Mixins

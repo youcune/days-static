@@ -3,18 +3,16 @@
   %head
     %meta{charset: 'utf-8'}
     %meta{name: 'viewport', content: 'initial-scale=1.0,user-scalable=no'}
-    %meta{name: 'description', content: 'とは、お手持ちのスマートフォンを使って、ゆりえと Yo でコミュニケーションできる、これまでにない新感覚サービスです。'}
+    %meta{name: 'description', content: 'とは、お手持ちのスマートフォンを使って、ゆりえと Yo でコミュニケーションできる、これまでにない新感覚サービスでした。'}
     %meta{property: 'og:title', content: 'ゆりえDays'}
     %meta{property: 'og:type', content: 'website'}
-    %meta{property: 'og:url', content: 'http://yurie.sexy/'}
+    %meta{property: 'og:url', content: 'https://yurie.sexy/'}
     %meta{property: 'og:locale:alternate', content: 'ja_JP'}
     %meta{property: 'og:locale:alternate', content: 'en_US'}
     %meta{property: 'og:image', content: image_path('apple-touch-icon.jpg')}
-    %meta{property: 'og:description', content: 'とは、お手持ちのスマートフォンを使って、ゆりえと Yo でコミュニケーションできる、これまでにない新感覚サービスです。'}
+    %meta{property: 'og:description', content: 'とは、お手持ちのスマートフォンを使って、ゆりえと Yo でコミュニケーションできる、これまでにない新感覚サービスでした。'}
     %title ゆりえDays｜ゆりえとコミュニケーションできる新感覚サービス
     = stylesheet_link_tag 'site'
-    = javascript_include_tag 'site'
-    %link{rel: 'author', href: 'http://google.me/+YuNakanishi'}
     %link{rel: 'icon', type: 'image/png', href: image_path('favicon.png')}
     %link{rel: 'apple-touch-icon', type: 'image/jpeg', href: image_path('apple-touch-icon.jpg')}
   %body
@@ -26,9 +24,9 @@
       .container
         .row
           .col-xs-12.col-sm-6
-            %p とは、お手持ちのスマートフォンを使って、ゆりえと <a href="http://justyo.co/">Yo</a> でコミュニケーションできる、これまでにない新感覚サービスでした。
+            %p とは、お手持ちのスマートフォンを使って、ゆりえと Yo でコミュニケーションできる、これまでにない新感覚サービスでした。
             %p Yo の開発が停滞して、サービス連携も動かなくなって長期間経過したのでサービス終了となりました。たくさん遊んでいただいてありがとうございました！
-            %p WAS a communication service with Yurie using <a href="http://justyo.co/">Yo</a> smartphone application.
+            %p WAS a communication service with Yurie using Yo smartphone application.
             %p This service was terminated due to Yo's integration trouble. Thanks for playing with Yurie!
         .row
           .col-xs-12.col-sm-6
@@ -47,7 +45,6 @@
         %p#social-buttons.pull-left
           %span#social-bottons-guide SHARE <i class="fa fa-caret-right"></i>
           = link_to(image_tag('mini_social_icons/twitter.png', alt: 'twitter', width: 20, height: 20), 'https://twitter.com/intent/tweet?source=http%3A%2F%2Fyurie.sexy%2F&text=http%3A%2F%2Fyurie.sexy%2F')
-          = link_to(image_tag('mini_social_icons/googleplus.png', alt: 'Google+', width: 20, height: 20), 'https://plus.google.com/share?url=http%3A%2F%2Fyurie.sexy%2F')
           = link_to(image_tag('mini_social_icons/facebook.png', alt: 'facebook', width: 20, height: 20), 'https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fyurie.sexy%2F&t=yurie.sexy')
           = link_to(image_tag('mini_social_icons/hatena_bookmark.png', alt: 'はてなブックマーク', width: 20, height: 20), 'http://b.hatena.ne.jp/entry/yurie.sexy/')
           = link_to(image_tag('mini_social_icons/line.png', alt: 'LINE', width: 20, height: 20), 'http://line.me/R/msg/text/?http%3A%2F%2Fyurie.sexy%2F')

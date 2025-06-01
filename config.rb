@@ -1,8 +1,6 @@
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
 
-activate :sprockets
-
 # Layouts
 # https://middlemanapp.com/basics/layouts/
 
